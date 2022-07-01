@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+ /* Barra navegacion  */
+header{
+    background-color: rgb(24, 23, 23);
+    padding: .5rem 1rem ;
+    width: 100%;
+    position: fixed;
+} 
+
+.caja{    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    padding: 0 2rem;
+}
+
+nav a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(196, 167, 8);
+    transition: all 0.15s ease-out;
+    border-bottom: .1rem solid rgba(196, 168, 8, 0.815);
+    padding-bottom: .2rem;
+}
+
+.nav-icons span{
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 .5rem;
+}
+
+.nav-icons span:hover{
+    color: rgb(196, 167, 8);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 4rem;
+}  
+
+#menu-btn{
+    display: none;
+}
+
