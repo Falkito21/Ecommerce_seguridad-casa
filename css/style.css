@@ -83,4 +83,57 @@
 .logo{
     width: 100%;
 }  
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .logo-container{
+        max-width: 25%;
+    }
+
+    .menu-sections{
+        width: fit-content;
+        position: initial;
+        flex-direction: row;
+    }
+
+    .menu-list{
+        padding: 0 .8rem;
+    }
+
+    .menu-links{
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+    }
+
+    #menu-btn{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-links{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+    .material-symbols-outlined{
+        font-size: 30px !important;
+    }
+    .logo-container{
+        max-width: 20%;
+    }
+
+    .menu-list{
+        padding: 0 1.5rem;
+    }
+
+    .menu-links{
+        font-size: 1.8rem;
+    }
+}
+/* FIN MEDIA QUERIES */
 /* FIN NAVBAR */

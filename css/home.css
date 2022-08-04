@@ -63,6 +63,41 @@
     text-align: center;
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .titulo-2{
+        font-size: 2.2rem;
+    }
+
+    .subtitulo{
+        font-size: 1.2rem;
+    }
+
+    .home-btn-a{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-container{
+        max-height: calc(100vh - var(--header-height));
+        padding: 5%;
+    }
+
+    .home-content{
+        padding: 0;
+    }
+    
+    .isotipo{
+        width: 50%;
+    }
+}
+/* FIN MEDIA QUERIES */
+
 /* FIN HOME */
 
 
