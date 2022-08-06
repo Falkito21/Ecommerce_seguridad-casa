@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ecommerce</title>
 </head>
@@ -14,11 +15,10 @@
         
         <div>
             <ul id="navbar">
-                <li><a  href="index.html">Home</a></li>
-                <li><a  href="shop.html">Shop</a></li>
-                <li><a  href="blog.html">Blog</a></li>
-                <li><a  href="about.html">About</a></li>
-                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a  href="index.html">Incio</a></li>
+                    <li><a  href="shop.html">Productos</a></li>
+                <li><a  href="about.html">Nosotros</a></li>
+                <li><a class="active" href="contact.html">Contacto</a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -34,13 +34,43 @@
     
     
     <section>
+        <form action="#">
+            <div class="fila1">
+            <label for="">
+                Nombre:
+                <input type="text" name="nombre">
+            </label>
+            <label for="">
+                Apellido:
+                <input type="text" name="Apellido">
+            </label>
+            </div>
+            <div class="fila2">
+            <label for="">
+                Telefono:
+                <input type="text" name="telefono">
+            </label>
+            <label for="">
+                Email:
+                <input type="email" name="email">
+            </label>
+            </div>
+            <label for="">
+                Ingrese su mensaje...
+                <textarea name="mensaje" id="" cols="30" rows="10">
 
+                </textarea>
+            </label>
+            <input type="submit" value="Enviar">
+        </form>
     </section>
     
     <footer  class="section-p1">
          <div class="col">
              <img class="logo" src="imgs/logo2.png" alt="">
              <h4>Contacto</h4>
+             <p style="color: black; cursor: pointer;">safetyinlife.aa@gmail.com</p>
+             
              <p><strong>Direccion: </strong> </p>
              <p><strong>Horarios: </strong></p>
              <div class="follow">
@@ -49,8 +79,7 @@
                      <i class="fab fa-facebook"></i>
                      <i class="fab fa-twitter"></i>
                      <i class="fab fa-instagram"></i>
-                     <i class="fab fa-pinterest-p"></i>
-                     <i class="fab fa-youtube"></i>
+                     <i class="fab fa-whatsapp"></i>
                  </div>
              </div>
 

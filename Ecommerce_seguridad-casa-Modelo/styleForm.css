@@ -1,0 +1,109 @@
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+form .fila1{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+form .fila1 label{
+    width: 100%;
+}
+form .fila2 label{
+    width: 100%;
+}
+form .fila2{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+form  label{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    width: 100%;
+}
+form label textarea{
+    margin-bottom: 3rem;
+}
+form input{
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+form textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100% ;
+}
+form input[type="submit"]{
+    display: flex;
+    width: 15%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px ;
+}
+form input[type="submit"]:hover{
+    background-color: #ff9d00;
+    transition: .5s ease-in-out;
+    color: white;
+    font-size: 1.3rem;
+}
+@media (max-width: 1024px){
+    form .fila1{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+    
+    form .fila1 label{
+        width: 100%;
+    }
+    form .fila2 label{
+        width: 100%;
+    }
+    form .fila2{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+    form input[type="submit"]{
+        width: 35%;
+    }
+}
+@media(max-width: 799px){
+    form{
+        margin: 3rem;
+    }
+    form .fila1{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    form .fila1 label{
+        width: 100%;
+    }
+    form .fila2 label{
+        width: 100%;
+
+    }
+    form .fila2{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    form input[type="submit"]{
+        display: inline-block;
+        align-self: center;
+        justify-self: center;
+    }
+}
+@media (max-width: 540px){
+    form{
+        margin: 5px;
+    }
+}
