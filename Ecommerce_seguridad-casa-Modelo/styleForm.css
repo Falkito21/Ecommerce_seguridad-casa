@@ -1,3 +1,4 @@
+
 form{
     display: flex;
     flex-direction: column;
@@ -52,6 +53,38 @@ form input[type="submit"]:hover{
     color: white;
     font-size: 1.3rem;
 }
+.conocenos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8rem;
+}
+.conocenos .grupo{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.conocenos .grupo img{
+    width: 25rem;
+}
+.conocenos .trabajos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.conocenos .texto{
+    width: 50%;
+}
+.conocenos .trabajos img{
+    width: 25rem;
+}
 @media (max-width: 1024px){
     form .fila1{
         display: flex;
@@ -72,6 +105,12 @@ form input[type="submit"]:hover{
     }
     form input[type="submit"]{
         width: 35%;
+    }
+    .conocenos{
+        padding: 4rem;
+    }
+    .conocenos .texto{
+        width: 90%;
     }
 }
 @media(max-width: 799px){
@@ -101,9 +140,41 @@ form input[type="submit"]:hover{
         align-self: center;
         justify-self: center;
     }
+    .conocenos{
+        padding: 2rem;
+    }
+    .conocenos .texto{
+        width: 100%;
+    }
+    .conocenos .grupo{
+        display: flex;
+        flex-direction: column;
+    }
+    .conocenos .trabajos{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .conocenos .trabajos img{
+        padding-bottom: 2rem;
+    }
+    .conocenos h3{
+        text-align: center;
+    }
+    .conocenos .texto{
+        width: 100%;
+    }
 }
 @media (max-width: 540px){
     form{
         margin: 5px;
+    }
+    .conocenos{
+        padding: 1.1rem;
+    }
+    .conocenos .texto{
+        width: 100%;
     }
 }
